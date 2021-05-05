@@ -41,3 +41,9 @@
   height: 3rem;
   border: solid 0.5rem #e5e7eb;
 } */
+
+.progress-bar {
+  background: #fecaca;
+  height: 0.5rem;
+  margin-top: 1rem;
+}

@@ -7,7 +7,7 @@ export default function App() {
         Art Gallery
       </h1>
       <p id="line">
-        I you are an artist share your creations for the world to see and
+        If you are an artist share your creations for the world to see and
         appreciate!!{" "}
       </p>
       <Upload />
