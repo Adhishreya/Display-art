@@ -10,3 +10,6 @@ create a database in test mode,creating it in production mode involves setting s
 - publish rules
 
 Day 3 https://youtu.be/vUe91uOx7R0?t=2838
+**References (for error)**
+* https://firebase.google.com/docs/firestore/quickstart
+* https://www.freecodecamp.org/news/the-firestore-tutorial-for-2020-learn-by-example/
