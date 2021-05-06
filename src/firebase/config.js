@@ -15,6 +15,6 @@ firebase.initializeApp(firebaseConfig); //to connect backend and frontend
 //to initialize storage service
 const projStorage = firebase.storage();
 const projFireStore = firebase.firestore();
-const timestamp = firebase.firestore.FieldValue.serverTimestamp;
+const timestamp = firebase.firestore.FieldValue.serverTimestamp();
 //exporting the services
 export { projStorage, projFireStore, timestamp };
