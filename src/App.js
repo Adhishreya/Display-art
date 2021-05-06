@@ -1,5 +1,6 @@
 import "./styles.css";
 import Upload from "./comps/Upload.js";
+import ImageGrid from "./comps/ImageGrid.js";
 export default function App() {
   return (
     <div className="App">
@@ -11,6 +12,7 @@ export default function App() {
         appreciate!!{" "}
       </p>
       <Upload />
+      <ImageGrid />
     </div>
   );
 }
