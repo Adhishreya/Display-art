@@ -18,7 +18,7 @@ const Upload = () => {
   return (
     <form>
       <label htmlFor="image" id="label">
-        +
+        <p>+</p>
         <input
           name="image"
           id="input"
