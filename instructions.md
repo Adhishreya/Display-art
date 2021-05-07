@@ -14,3 +14,7 @@ Day 4 https://youtu.be/vUe91uOx7R0?t=3480
 
 - https://firebase.google.com/docs/firestore/quickstart
 - https://www.freecodecamp.org/news/the-firestore-tutorial-for-2020-learn-by-example/
+
+# Animations using Framer Motions
+
+- https://www.framer.com/motion/

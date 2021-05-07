@@ -1,7 +1,10 @@
 import "./styles.css";
 import Upload from "./comps/Upload.js";
 import ImageGrid from "./comps/ImageGrid.js";
+import Modal from "./comps/Modal.js";
+import { useState } from "react";
 export default function App() {
+  const [image, setImage] = useState(null);
   return (
     <div className="App">
       <h1 id="tagline" style={{ color: "#F87171" }}>
@@ -12,7 +15,8 @@ export default function App() {
         appreciate!!{" "}
       </p>
       <Upload />
-      <ImageGrid />
+      <ImageGrid setImage={setImage} />
+      {image && <Modal image={image} setImage={setImage} />}
     </div>
   );
 }

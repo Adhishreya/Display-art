@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { projectFireStore } from "../firebase/config.js";
+import firebase from "firebase";
 const useFirestore = (collection) => {
   const [docs, setDocs] = useState([]);
   //initially no data is retrived hence the docs is set to an empty array
   useEffect(() => {
-    const unsub = projectFireStore
+    const unsub = firebase
+      .firestore()
       .collection(collection)
       .orderBy("createdAt", "desc")
       .onSnapshot((snap) => {
