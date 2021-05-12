@@ -18,3 +18,8 @@ https://youtu.be/vUe91uOx7R0
 # Animations using Framer Motions
 
 - https://www.framer.com/motion/
+
+# popssible improvements
+* Delete image feature
+* like/dislike/follow
+* login in
