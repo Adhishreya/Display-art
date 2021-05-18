@@ -25,11 +25,12 @@ const Upload = () => {
           type="file"
           accept="image/*"
           onChange={changeHandeler}
+          multiple
         />
       </label>
       <div className="output">
         {error && <div className="error">{error}</div>}
-        {file && <div>{file.name}</div>}
+        {/* {file && <div>{file.name}</div>} */}
         {file && <ProgressBar file={file} setFile={setFile} />}
       </div>
     </form>

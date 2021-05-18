@@ -5,7 +5,7 @@ const ProgressBar = ({ file, setFile }) => {
   //obtaining the url and the progress of upload
   const { url, progress } = useStorage(file);
 
-  console.log(progress, url);
+  // console.log(progress, url);
   //logs the percentage of upload and the url at which the image is uploaded
   useEffect(() => {
     if (url) {

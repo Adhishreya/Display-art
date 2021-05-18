@@ -8,6 +8,10 @@
   /* margin-left: -15rem; */
   /* margin-top: -0rem; */
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 #tagline,
 #line {
   font-family: "Original Surfer", cursive;
@@ -51,21 +55,27 @@
 .img-grid {
   margin: 200px auto;
   display: grid;
+  width: 100%;
   grid-gap: 6rem;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
 .img-wrap {
   /* overflow: hidden; */
-  width: 8rem;
+  /* width: 8rem;*/
+  /* width: fit-content; */
+  width: 100%;
   height: 5rem;
+  align-content: center;
+  justify-content: center;
   padding: 50% 0;
   /* position: relative; */
 }
 .img-wrap img {
   max-width: 100%;
-  width: 8rem;
+  /* width: 8rem; */
+  width: 100%;
   height: 8rem;
-  position: absolute;
+  position: relative;
 }
 /* modal style */
 .backdrop {
