@@ -14,7 +14,6 @@ const useFirestore = (collection) => {
         //takes a snapshot of the database at that moment in time
         let doc = [];
         snap.forEach((d) => {
-          // console.log(d.data());
           doc.push({ ...d.data() });
           //getting all the properties of the data
         });

@@ -1,7 +1,7 @@
 import React from "react";
 import { Delete, ThumbDown, ThumbUp } from "@material-ui/icons";
 import { motion } from "framer-motion";
-
+import delImage from "../hooks/delImage.js";
 //to use motion animations on an element ,preceed the element with motion.
 import useFirestore from "../hooks/useFirestore.js";
 const ImageGrid = ({ setImage }) => {
@@ -35,13 +35,14 @@ const ImageGrid = ({ setImage }) => {
               />
               <Delete
                 onClick={() => {
-                  alert("delete");
+                  // alert("delete");
+                  delImage(val.url);
                 }}
               />
               <ThumbDown
                 onClick={() => {
                   console.log(val);
-                  alert("dislike" + val.url);
+                  alert("dislike");
                 }}
               />
             </div>
