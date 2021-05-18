@@ -23,3 +23,11 @@ https://youtu.be/vUe91uOx7R0
 * Delete image feature
 * like/dislike/follow
 * login in
+
+# deleting 
+https://stackoverflow.com/questions/47180076/how-to-delete-document-from-firestore-using-where-clause
+
+# hosting
+
+# material ui
+https://material-ui.com/api/grid/
