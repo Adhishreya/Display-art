@@ -3,7 +3,11 @@ import ProgressBar from "./ProgressBar";
 const Upload = () => {
   const [file, setFile] = useState(null);
   const [error, setError] = useState(null);
+  const [signIn, setSignIn] = useState(false);
   const changeHandeler = (e) => {
+    if (!signIn) {
+      alert("SignIN to upload");
+    }
     let select = e.target.files[0];
     // console.log(upload);
     if (select) {

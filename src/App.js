@@ -3,9 +3,12 @@ import Upload from "./comps/Upload.js";
 import ImageGrid from "./comps/ImageGrid.js";
 import Modal from "./comps/Modal.js";
 import { useState } from "react";
+import firebase from "firebase";
 import { Twitter, GitHub, LinkedIn } from "@material-ui/icons";
 export default function App() {
   const [image, setImage] = useState(null);
+  var provider = new firebase.auth.GoogleAuthProvider();
+
   return (
     <div className="App">
       <h1 id="tagline" style={{ color: "#F87171" }}>
