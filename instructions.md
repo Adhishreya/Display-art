@@ -20,14 +20,22 @@ https://youtu.be/vUe91uOx7R0
 - https://www.framer.com/motion/
 
 # popssible improvements
-* Delete image feature
-* like/dislike/follow
-* login in
 
-# deleting 
+- Delete image feature
+- like/dislike/follow
+- login in
+
+# deleting
+
 https://stackoverflow.com/questions/47180076/how-to-delete-document-from-firestore-using-where-clause
 
 # hosting
 
 # material ui
+
 https://material-ui.com/api/grid/
+
+**To update a field value i.e. to increment/decrement a field value**
+https://stackoverflow.com/questions/50762923/how-to-increment-existing-number-field-in-cloud-firestore
+
+Firebase offers FieldValue object that can be used to obtain the current field value and then update that.

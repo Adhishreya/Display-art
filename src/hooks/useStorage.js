@@ -8,7 +8,8 @@ const useStorage = (file) => {
   const [progress, setProgress] = useState(0);
   const [url, setUrl] = useState(null);
   const [error, setError] = useState(null);
-
+  const [likes, setLikes] = useState(0);
+  const [dislikes, setDislikes] = useState(0);
   useEffect(() => {
     //logic to upload the file....triggered every time a new file is uploaded
     const storgeRef = projStorage.ref(file.name); //creating a reference to the file default firebase in storage bucket
@@ -32,7 +33,12 @@ const useStorage = (file) => {
         const url = await storgeRef.getDownloadURL();
         const createdAt = timestamp;
         // collectionRef.add({ url: url, createdAt });
-        collectionRef.add({ url: url, createdAt: createdAt });
+        collectionRef.add({
+          url: url,
+          createdAt: createdAt,
+          likes: 0,
+          dislikes: 0
+        });
         //adding data to the database using the reference
         //created at is uset to store the timestamp
         setUrl(url);
