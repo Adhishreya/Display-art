@@ -8,7 +8,7 @@ const Upload = () => {
     if (!signIn) {
       alert("SignIN to upload");
     }
-    let select = e.target.files[0];
+    let select = e.target.files;
     // console.log(upload);
     if (select) {
       //ensuring the file is selected and not null

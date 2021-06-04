@@ -3,7 +3,13 @@ import useStorage from "../hooks/useStorage.js";
 import { motion } from "framer-motion";
 const ProgressBar = ({ file, setFile }) => {
   //obtaining the url and the progress of upload
-  const { url, progress } = useStorage(file);
+  var url, progress;
+  // file.forEach(element => {
+  //  return  { url, progress } = useStorage(element);
+  // });
+  for (var i = 0; i < file.length; i++) {
+    var { url, progress } = useStorage(file[i]);
+  }
 
   // console.log(progress, url);
   //logs the percentage of upload and the url at which the image is uploaded
