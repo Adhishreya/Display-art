@@ -8,8 +8,8 @@ const useStorage = (file) => {
   const [progress, setProgress] = useState(0);
   const [url, setUrl] = useState(null);
   const [error, setError] = useState(null);
-  const [likes, setLikes] = useState(0);
-  const [dislikes, setDislikes] = useState(0);
+  // const [likes, setLikes] = useState(0);
+  // const [dislikes, setDislikes] = useState(0);
   useEffect(() => {
     //logic to upload the file....triggered every time a new file is uploaded
     const storgeRef = projStorage.ref(file.name); //creating a reference to the file default firebase in storage bucket

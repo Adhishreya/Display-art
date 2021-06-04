@@ -1,6 +1,5 @@
 import firebase from "firebase";
 function delImage(url) {
-  console.log(url);
   const store = firebase
     .firestore()
     .collection("images")
@@ -13,7 +12,11 @@ function delImage(url) {
       doc.ref.delete();
     });
   });
-  console.log(store);
+  // console.log(store);
+  const container = firebase.storage().refFromURL(url);
+  // if (container.exists()) {
+  container.delete().catch((e) => console.log(e));
+  // }
   return 1;
 }
 export default delImage;

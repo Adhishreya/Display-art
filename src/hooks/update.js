@@ -1,13 +1,9 @@
 import firebase from "firebase";
 function updateimg(url, update) {
-  console.log(url);
   const store = firebase
     .firestore()
     .collection("images")
     .where("url", "==", url);
-  // .document(url)
-  // .delete();
-  // .where("url", "==", url);
   if (update === "likes") {
     store.get().then(function (querySnapshot) {
       querySnapshot.forEach(function (doc) {
