@@ -21,6 +21,12 @@ const Modal = ({ image, setImage }) => {
         initial={{ y: "-100vh" }}
         animate={{ y: 0 }}
       />
+      <motion.div>
+        <motion.div>jhzjgdshjsgdh</motion.div>
+        <motion.form>
+          <motion.input type="text" />
+        </motion.form>
+      </motion.div>
     </motion.div>
   );
 };

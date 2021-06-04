@@ -16,7 +16,7 @@ const ImageGrid = ({ setImage }) => {
         docs.map((val) => (
           <motion.div
             className="img-wrap"
-            key={val.id}
+            key={val.url}
             layout //creates animation while rearranging
             whileHover={{ opacity: 0.7 }}
           >
@@ -32,14 +32,12 @@ const ImageGrid = ({ setImage }) => {
             <div>
               <ThumbUp
                 onClick={() => {
-                  // alert("delete");
                   updateimg(val.url, "likes");
                 }}
               />
               <small>{val.likes}</small>
               <Delete
                 onClick={() => {
-                  // alert("delete");
                   delImage(val.url);
                 }}
               />

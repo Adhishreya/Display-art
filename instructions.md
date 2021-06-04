@@ -39,3 +39,6 @@ https://material-ui.com/api/grid/
 https://stackoverflow.com/questions/50762923/how-to-increment-existing-number-field-in-cloud-firestore
 
 Firebase offers FieldValue object that can be used to obtain the current field value and then update that.
+
+**To delete files from Storage if only url of the file is currently available ,obtain reference to the file using refFromURl**
+This function accepts the url of the image and returns the reference to the file, which can then be used for manipulation like delete()
