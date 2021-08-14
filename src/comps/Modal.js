@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Modal = ({ image, setImage }) => {
   return (
     //when an image is clicked then the modal is enlarged and receives the details of the uploaded image
-    <motion.div
+    <motion.div className="backdrop-content"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       className="backdrop"
@@ -22,7 +22,7 @@ const Modal = ({ image, setImage }) => {
         animate={{ y: 0 }}
       />
       <motion.div>
-        <motion.div>jhzjgdshjsgdh</motion.div>
+        <motion.div className="bottomo-content">jhzjgdshjsgdh</motion.div>
         <motion.form>
           <motion.input type="text" />
         </motion.form>

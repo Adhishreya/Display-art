@@ -14,14 +14,21 @@ export default function App() {
       <h1 id="tagline" style={{ color: "#F87171" }}>
         Art Gallery
       </h1>
+
+      {/* <div className="userManage">
+      <button>Sign Up</button>
+      <button>Sign In</button>
+      </div> */}
+
       <p id="line">
         If you are an artist share your creations for the world to see and
         appreciate!!{" "}
       </p>
+
       <Upload />
       <ImageGrid setImage={setImage} />
       {image && <Modal image={image} setImage={setImage} />}
-      <div>
+      <div className="footer">
         <a href="https://twitter.com/AdhishreyaP" target="_blank">
           {" "}
           <Twitter />

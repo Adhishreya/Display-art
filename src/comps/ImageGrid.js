@@ -29,18 +29,18 @@ const ImageGrid = ({ setImage }) => {
               onClick={() => setImage(val.url)}
             />
 
-            <div>
+            <div className="bottom-content">
               <ThumbUp
                 onClick={() => {
                   updateimg(val.url, "likes");
                 }}
               />
               <small>{val.likes}</small>
-              <Delete
+              {/* <Delete
                 onClick={() => {
                   delImage(val.url);
                 }}
-              />
+              /> */}
               <ThumbDown
                 onClick={() => {
                   updateimg(val.url, "dislikes");
