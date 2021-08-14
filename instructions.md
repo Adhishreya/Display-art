@@ -19,7 +19,7 @@ https://youtu.be/vUe91uOx7R0
 
 - https://www.framer.com/motion/
 
-# popssible improvements
+# possible improvements
 
 - Delete image feature
 - like/dislike/follow
