@@ -36,11 +36,11 @@ const ImageGrid = ({ setImage }) => {
                 }}
               />
               <small>{val.likes}</small>
-              {/* <Delete
+              <Delete
                 onClick={() => {
                   delImage(val.url);
                 }}
-              /> */}
+              />
               <ThumbDown
                 onClick={() => {
                   updateimg(val.url, "dislikes");
